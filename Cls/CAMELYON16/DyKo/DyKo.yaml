@@ -1,0 +1,51 @@
+General:
+    comment:
+    seed: 2024
+    fp16: False
+    amp_level: O2
+    precision: 32
+    multi_gpu_mode: dp
+    gpus: [0]
+    epochs: &epoch 1000
+    grad_acc: 4
+    frozen_bn: False
+    patience: 40
+    server: test #train #test
+    log_path: logs/
+
+Data:
+    dataset_name: ClsVlmData
+    data_high_dir: /mnt/HDD_12T/wsi_features/AlignFeats/CAMELYON16/feats-m20-s448-conch_v1_5/pt_files/
+    data_low_dir: /mnt/HDD_12T/wsi_features/AlignFeats/CAMELYON16/feats-m20-s448-conch_v1_5/pt_files/
+    label_dir: splits/4foldcls/camelyon16/
+    concept_dir: concept_processed/text_embeddings_CAMELYON16.pt
+    sampling_seed: 42
+    n_shot: 16
+
+    train_dataloader:
+        batch_size: 1 
+        num_workers: 8
+
+    test_dataloader:
+        batch_size: 1
+        num_workers: 8
+
+Model:
+    name: DyKo
+    n_classes: 2
+    survival: False
+    prototype_number: 16
+    num_clusters: 10
+    num_concepts: 10
+
+Optimizer:
+    opt: adam
+    lr: 0.001
+    opt_eps: null 
+    opt_betas: null
+    momentum: null 
+    weight_decay: 0.00001
+
+Loss:
+    base_loss: CrossEntropyLoss
+

@@ -1,0 +1,9 @@
+train_slide_id,train_label
+normal_054,0
+normal_085,0
+normal_001,0
+normal_103,0
+tumor_011,1
+tumor_058,1
+tumor_007,1
+tumor_064,1
