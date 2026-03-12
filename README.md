@@ -1,4 +1,3 @@
-# This is an anonymous GitHub account that does not include any user information.
 
 ---
 
