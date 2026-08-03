@@ -220,37 +220,17 @@ logs/
 
 ```
 
-[//]: # ()
-[//]: # (---)
+## Citation
 
-[//]: # ()
-[//]: # (## 🖊️ Citation)
+If you find this work useful, please cite:
 
-[//]: # ()
-[//]: # (If you find **DyKo** useful for your research, please consider citing our paper:)
+```bibtex
+@inproceedings{li2026universal,
+  title={Universal-to-Specific: Dynamic Knowledge-Guided Multiple Instance Learning for Few-Shot Whole Slide Image Classification},
+  author={Li, Junjian and Kuang, Hulin and Liu, Jin and Yue, Hailin and He, Mengshen and Wang, Jianxin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={26614--26623},
+  year={2026}
+}
 
-[//]: # ()
-[//]: # (```bibtex)
-
-[//]: # (@article{dyko2024,)
-
-[//]: # (  title={DyKo: Dynamic Knowledge-guided Vision-Language Model for WSI Classification},)
-
-[//]: # (  author={Your Name and Collaborators},)
-
-[//]: # (  journal={Conference/Journal Name},)
-
-[//]: # (  year={2024})
-
-[//]: # (})
-
-[//]: # ()
-[//]: # (```)
-
-## 🙏 Acknowledgements
-
-This project is built upon the following excellent open-source works:
-
-* [TITAN](https://github.com/MahmoodLab/TITAN) & [CONCH](https://github.com/mahmoodlab/CONCH) (Encoders)
-* [CLAM](https://www.google.com/search?q=https://github.com/mahmoodlab/CLAM) (Preprocessing)
-* [ViLa-MIL](https://www.google.com/search?q=https://github.com/BioMedical-Imaging-Laboratory/ViLa-MIL) & [FOCUS](https://www.google.com/search?q=https://github.com/HKU-MedAI/FOCUS) (References)
+```
